@@ -1,29 +1,51 @@
-**main - Prints all possible combinations of two two-digit numbers,
-*
-*ranging from 0-99, separated by a comma followed by a space.
-*
-*
-*Return: Always 0.
-*
-*/
-int; main(void)
+#include <stdio.h>
+
+/*
+ *
+ *100-print_comb3.c
+ *
+ *
+ *
+ *Description:
+ *
+ *This program prints
+ *
+ *"some of" the base 10 numbers in order
+ *
+ *from 0 to 99
+ *
+ *No vars of type char ...
+ *
+ */
+
+/**
+ *main - Entry point
+ *
+ *
+ *
+ *Return: Always 0 (Success)
+ *
+ */
+int main(void)
 {
-int num1, num2;
-for (num1 = 0; num1 <= 98; num1++)
+int i, j, offset;
+offset = 48;
+for (i = 0; i < 10; i++)
 {
-for (num2 = num1 + 1; num2 <= 99; num2++)
+for (j = i; j < 10; j++)
 {
-putchar((num1 / 10) + '0');
-putchar((num1 % 10) + '0');
-putchar(' ');
-putchar((num2 / 10) + '0');
-putchar((num2 % 10) + '0');
-if (num1 == 98 && num2 == 99)
-continue;
-putchar(',');
-putchar(' ');
+if (!(i == j))
+{
+putchar(i + offset);
+putchar(j + offset)
+if (!((i == 8) && (j == 9)))
+{
+putchar(44);
+putchar(32);
 }
 }
-putchar('\n');
+}
+}
+putchar(10);
 return (0);
 }
