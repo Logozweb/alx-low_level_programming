@@ -37,7 +37,7 @@ for (j = i; j < 10; j++)
 if (!(i == j))
 {
 putchar(i + offset);
-putchar(j + offset)
+putchar(j + offset);
 if (!((i == 8) && (j == 9)))
 {
 putchar(44);
