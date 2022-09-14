@@ -28,7 +28,6 @@ printf("\n");
 }
 }
 else
-{
 for (i = n; i >= 98; i--)
 {
 printf("%i", i);
