@@ -13,7 +13,6 @@
  *
  */
 
-
 void times_table(void)
 {
 int row, col, p;
@@ -39,7 +38,7 @@ _putchar('0' + p % 10);
 if (col < 9)
 _putchar(',');
 else
-_putchar('\n')
+_putchar('\n');
 }
 }
 }
