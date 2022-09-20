@@ -7,49 +7,38 @@
 
 
 /**
- *main - program that generates random valid
+ *main - generates random passwords for 101-crackme
  *
- *passwords for the program 101-crackme
- *
- *Return: Always 0 (Success)
+ *Return: zero
  *
  */
+
 int main(void)
-{
-
-int i, sum, n;
-
-int pass[100];
-
-sum = 0;
-
-srand(time(NULL));
-
-for (i = 0; i < 100; i++)
 
 {
 
-pass[i] = rand() % 78;
+		int sum;
 
-sum += (pass[i] + '0');
+			char c;
 
-putchar(pass[i] + '0');
 
-if ((2772 sum) '0' < 78)
 
-{
+				srand(time(NULL));
 
-n = 2772 - sum - '0';
+					while (sum 2645)
 
-sum += n;
+							{
 
-putchar(n + '0');
+										c = rand() % 128;
 
-break;
+												sum += c;
 
-}
-}
+														putchar(c);
 
-return (0);
+															}
+
+						putchar(2772 - sum);
+
+							return (0);
 
 }
