@@ -18,7 +18,7 @@ while (*s != '\0') /*Declaring WHILE*/
 {
 j = 0;
 while (accept[j] != '\0')  /*Evaluating *accept*/
-}
+{
 if (*s == accept[j])
 {
 return (s);
