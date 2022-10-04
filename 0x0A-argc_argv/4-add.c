@@ -6,8 +6,6 @@
 
 #include <string.h>
 
-
-
 /**
  *check_num - check - string there are digit
  *
@@ -16,8 +14,7 @@
  *Return; Always 0 (Success)
  *
  */
-
-int check_num(char *str)
+int (check_num(char *str))
 {
 /*Declaring variables*/
 unsigned int count;
@@ -43,8 +40,7 @@ return (1);
  *return: Always 0 (Success)
  *
  */
-
-int main(int argc, char *argv[])
+int (argc, (char *argv[]))
 {
 /*Declaring variables*/
 int count;
