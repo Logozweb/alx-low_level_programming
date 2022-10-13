@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 
 
+
 /**
  *print_all - prints anything.
  *
@@ -28,12 +29,13 @@ if (format[i] == t_arg[j] && c)
 printf(", ");
 break;
 } j++;
-}																switch (format[i])
+}
+switch (format[i])
 {
 case 'c':
 printf("%c", va_arg(valist, int)), c = 1;
 break;
-case 'i:
+case 'i':
 printf("%d", va_arg(valist, int)), c = 1;
 break;
 case 'f':
@@ -46,7 +48,7 @@ if (!str)
 printf("(nil)");
 break;
 }
-printf("%s", str)
+printf("%s", str);
 break;
 } i++;
 }
